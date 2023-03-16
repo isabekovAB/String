@@ -152,13 +152,9 @@ bool String::operator<(const String& str) const {
 }
 
 bool String::operator>(const String& str) const { return (str < *this); }
-
 bool String::operator<=(const String& str) const { return (!(*this > str)); }
-
 bool String::operator>=(const String& str) const { return (!(*this < str)); }
-
 bool String::operator==(const String& str) const { return (!(*this < str) && !(*this > str)); }
-
 bool String::operator!=(const String& str) const { return (!(*this == str)); }
 
 String& String::operator+=(const String& str) {
